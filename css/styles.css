@@ -2,8 +2,8 @@
   --button-color: #2196f3;
   --headline-color: #212121;
   --text-color: #757575;
-  --main-cl: #FFFFFF;
-  --section-bg-cl: #2F303A;
+  --main-cl: #ffffff;
+  --section-bg-cl: #2f303a;
   --nav-logo-cl: #000000;
   --bcg-btn-cl: #f5f4fa;
 }
@@ -14,6 +14,8 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* Reset */
+
 a {
   text-decoration: none;
 }
@@ -21,8 +23,64 @@ a {
 ul {
   list-style: none;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 /* Index.html */
 /* Шапка */
+
+.container {
+  display: block;
+  justify-content: center;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.header-list {
+  display: flex;
+  padding-left: 93px;
+  gap: 50px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-group {
+  display: flex;
+  gap: 50px;
+}
+
 .nav-link-logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -74,6 +132,8 @@ ul {
 
 .hero-section {
   background-color: var(--section-bg-cl);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 h1 {
@@ -84,9 +144,13 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 30px;
 }
 
 .button-order {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   color: var(--main-cl);
   background-color: var(--button-color);
   font-family: 'Roboto';
@@ -96,6 +160,25 @@ h1 {
   letter-spacing: 0.06em;
   cursor: pointer;
   border: none;
+  width: 216px;
+  height: 50px;
+}
+
+.about {
+  padding-bottom: 118px;
+}
+
+.about-us {
+  display: inline-flex;
+  gap: 30px;
+}
+
+.about-us > li {
+  width: 270px;
+}
+
+.about-us > li > h3 {
+  padding-bottom: 10px;
 }
 
 .about > ul > li > p {
@@ -113,6 +196,10 @@ h1 {
   text-transform: uppercase;
 }
 
+.work {
+  padding-top: 0;
+}
+
 h2 {
   color: var(--headline-color);
   font-weight: 700;
@@ -120,6 +207,23 @@ h2 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  padding-bottom: 50px;
+}
+
+.our-work {
+  display: flex;
+  gap: 30px;
+}
+
+.our-team {
+  display: flex;
+  gap: 30px;
+}
+
+.our-team-list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team h3 {
@@ -167,6 +271,15 @@ h2 {
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
+  padding-top: 20px;
+}
+
+.footer .adress-list li {
+  padding-bottom: 9px;
+}
+
+.footer .adress-list li:last-child {
+  padding: 0;
 }
 
 .footer-map-contact {
@@ -189,6 +302,12 @@ h2 {
 
 /* Portfolio.html */
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .radio-button {
   font-family: inherit;
   color: var(--headline-color);
@@ -200,12 +319,33 @@ h2 {
   letter-spacing: 0.03em;
   border: 0;
   cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  border-radius: 4px;
 }
 
 .radio-button:hover,
 .radio-button:focus {
   color: var(--main-cl);
   background-color: var(--button-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .visually-hidden {
@@ -234,4 +374,27 @@ h2 {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
+}
+
+.work-title {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: left;
+  padding-bottom: 4px;
+}
+
+.portfolio-list li p {
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: left;
+  color: var(--text-color);
+}
+
+.border-item {
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.portfolio-container {
+  padding-bottom: 94px;
 }
