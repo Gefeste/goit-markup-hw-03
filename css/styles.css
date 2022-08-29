@@ -44,8 +44,6 @@ img {
 /* Шапка */
 
 .container {
-  display: block;
-  justify-content: center;
   width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
@@ -60,14 +58,13 @@ img {
 
 .header-list {
   display: flex;
-  padding-left: 93px;
+  margin-left: 93px;
   gap: 50px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .nav {
@@ -103,6 +100,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 
 .nav-link:hover,
@@ -144,7 +144,10 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button-order {
@@ -164,25 +167,20 @@ h1 {
   height: 50px;
 }
 
-.about {
-  padding-bottom: 118px;
-}
-
 .about-us {
   display: inline-flex;
   gap: 30px;
 }
 
-.about-us > li {
+.about-us li {
   width: 270px;
 }
 
-.about-us > li > h3 {
-  padding-bottom: 10px;
+.about-us li h3 {
+  margin-bottom: 10px;
 }
 
-.about > ul > li > p {
-  font-weight: 400;
+.about ul li p {
   font-size: 14px;
   line-height: 1.71;
 }
@@ -200,19 +198,23 @@ h1 {
   padding-top: 0;
 }
 
-h2 {
+.title {
   color: var(--headline-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .our-work {
   display: flex;
   gap: 30px;
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .our-team {
@@ -233,6 +235,12 @@ h2 {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.our-teammate {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team p {
@@ -247,6 +255,8 @@ h2 {
 
 .footer {
   background-color: #2f303a;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .footer-logo {
@@ -265,21 +275,24 @@ h2 {
   color: var(--main-cl);
 }
 
-.footer .adress-list {
+address {
+  margin-top: 20px;
+}
+
+.adress-list {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
-  padding-top: 20px;
 }
 
 .footer .adress-list li {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .footer .adress-list li:last-child {
-  padding: 0;
+  margin: 0;
 }
 
 .footer-map-contact {
@@ -344,8 +357,7 @@ h2 {
   gap: 8px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .visually-hidden {
@@ -377,15 +389,11 @@ h2 {
 }
 
 .work-title {
-  margin-left: 24px;
-  margin-right: 24px;
   text-align: left;
-  padding-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-list li p {
-  margin-left: 24px;
-  margin-right: 24px;
   text-align: left;
   color: var(--text-color);
 }
@@ -393,8 +401,13 @@ h2 {
 .border-item {
   border: 1px solid #eeeeee;
   border-top: none;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 .portfolio-container {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
